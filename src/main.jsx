@@ -9,7 +9,7 @@ import Login from "./components/Login/Login";
 import Cargo from "./components/Cargo/Cargo";
 import CargoEstudante from "./components/CargoEstudante/CargoEstudante";
 import Bio from "./components/Bio/Bio";
-import Tags from "./components/tags/tags";
+import Tags from "./components/tags/Tags";
 import FimJornada from "./components/FimJornada/FimJornada";
 import Armario from "../Armario";
 import ArmarioHome from "./ArmarioHome";
