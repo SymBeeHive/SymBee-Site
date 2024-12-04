@@ -9,7 +9,6 @@ import Login from "./components/Login/Login";
 import Cargo from "./components/Cargo/Cargo";
 import CargoEstudante from "./components/CargoEstudante/CargoEstudante";
 import Bio from "./components/Bio/Bio";
-import Tags from "./components/Tags/Tags";
 import FimJornada from "./components/FimJornada/FimJornada";
 import Armario from "../Armario";
 import ArmarioHome from "./ArmarioHome";
@@ -32,7 +31,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="/cargo" element={<Cargo />} />
         <Route path="/estudante" element={<CargoEstudante />} />
         <Route path="/bio" element={<Bio />} />
-        <Route path="/tag" element={<Tags />} />
         <Route path="/end" element={<FimJornada />} />
         <Route path="/home" element={<ArmarioHome />} />
         <Route path="/perfil" element={<ArmarioPerfil />} />
