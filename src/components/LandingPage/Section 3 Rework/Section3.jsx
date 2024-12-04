@@ -1,5 +1,5 @@
 import React from 'react'
-import "./section3.css";
+import "./Section3.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
