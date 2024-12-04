@@ -17,8 +17,6 @@ import ArmarioPerfil from "./ArmarioPerfil"
 import SobreNos from "./components/Sobre nós/SobreNos";
 import DescricaoDeProjetos from "./components/Descrição dos Projetos/DescricaoDeProjetos";
 import Assinaturas from "./components/Assinaturas/Assinaturas";
-import Section4 from "./components/LandingPage/Section 4 Rework/Section4";
-import Carrossel from "./components/LandingPage/Section 3 Rework/Section3";
 import Contato from "./components/Contato/Contato";
 import Error from "./components/404/Error";
 

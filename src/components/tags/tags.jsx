@@ -26,6 +26,7 @@ const Tags = () => {
             <input type="text" placeholder="Outra..." class="input-field" />
           </div>
           <div className="tagsLanguages">
+          
             <div class="tag">Java</div>
             <div class="tag">React</div>
             <div class="tag">API</div>
