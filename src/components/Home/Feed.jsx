@@ -33,7 +33,6 @@ const Feed = () => {
             <img src={Kay} alt="Imagem exemplo de uma publicação" />
             <div className="iconComents">
               <div className="leftIcons">
-                <img src={Heart} alt="icone de coração" />
                 <img src={Ballon} alt="icone de balão de diálogo" />
                 <img src={PaperPlane} alt="icone de avião de papel" />
               </div>
