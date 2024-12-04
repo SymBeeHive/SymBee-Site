@@ -6,7 +6,7 @@ import Close from "./img/close.svg";
 import aviso from "./img/denied.svg"
 import salvar from "./img/salvar.svg"
 import share from "./img/share.svg"
-import mel from "./img/vector.svg"
+import mel from "./img/Vector.svg"
 import dinheiro from "./img/dinheiro.svg"
 import setaEsquerda from "./img/setaEsquerda.png"
 import setaDireita from "./img/setaDireita.png"

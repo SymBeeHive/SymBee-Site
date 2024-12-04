@@ -1,5 +1,4 @@
 import "./Footer.css";
-import LogoSvg from "../LogoSvg.jsx";
 import React from "react";
 import iconeGit from "/img/iconeGit.png";
 import iconeInsta from "/img/iconeInsta.png";
