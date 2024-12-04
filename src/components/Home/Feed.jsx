@@ -3,7 +3,7 @@ import Bee from "./assets/Bee.jsx";
 import React from "react";
 import Kay from "./img/kay.png";
 import PaperPlane from "./img/aviãoDePapel.png";
-import Heart from "./img/Coração.png";
+import Heart from "./img/coração.png";
 import Ballon from "./img/balão.png";
 import Verify from "./img/verify.png";
 import Flag from "./img/bandeira.webp"
