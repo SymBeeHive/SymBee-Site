@@ -1,7 +1,7 @@
 import React from "react";
 import Girassol from "./assets/Girassol";
 import Abelha from "./assets/Abelha";
-import "./section4.css";
+import "./Section4.css";
 
 function Section4Rework() {
   return (
