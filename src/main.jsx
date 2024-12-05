@@ -37,7 +37,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/about-us" element={<SobreNos />}/>
         <Route path="/project-description" element={<DescricaoDeProjetos />}/>
         <Route path="/assinaturas" element={<Assinaturas />}/>
-        <Route path="/dev" element={<Error />}/>
+        <Route path="/*" element={<Error />}/>
         <Route path="/contato" element={<Contato/>}/>
       </Route>
     </Routes>
