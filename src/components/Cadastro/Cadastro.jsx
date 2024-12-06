@@ -71,103 +71,88 @@ const Cadastro = () => {
   return (
     <section className={styles.RegisterPage}>
       <div className={styles.layout}>
-        <div className={styles.fieldInformations}>
-          <h2>Seja muito bem vindo!</h2>
+        <Formik
+          className={styles.informations}
+          initialValues={{
+            first_name: "",
+            last_name: "",
+            email: "",
+            cpf: "",
+            data_nascimento: "",
+            password: "",
+          }}
+          onSubmit={handleClickRegister}
+          validationSchema={validationRegister}
+        >
+          <Form className={styles.registerForm}>
+            
+              <Field
+                name="first_name"
+                className={styles.formField}
+                placeholder="Primeiro nome"
+              />
+              <ErrorMessage
+                component="span"
+                name="first_name"
+                className="form-error"
+              />
+              <Field
+                name="last_name"
+                className={styles.formField}
+                placeholder="Último nome"
+              />
+              <ErrorMessage
+                component="span"
+                name="last_name"
+                className="form-error"
+              />
+            
 
-          <Formik
-            className="informations"
-            initialValues={{
-              first_name: "",
-              last_name: "",
-              email: "",
-              cpf: "",
-              data_nascimento: "",
-              password: "",
-            }}
-            onSubmit={handleClickRegister}
-            validationSchema={validationRegister}
-          >
-            <Form className="register-form">
-              <div className="input-field">
-                <Field
-                  name="first_name"
-                  className="form-field"
-                  placeholder="Primeiro nome"
-                />
-                <ErrorMessage
-                  component="span"
-                  name="first_name"
-                  className="form-error"
-                />
-              </div>
-              <div className="input-field">
-                <Field
-                  name="last_name"
-                  className="form-field"
-                  placeholder="Último nome"
-                />
-                <ErrorMessage
-                  component="span"
-                  name="last_name"
-                  className="form-error"
-                />
-              </div>
-              <div className="input-field">
-                <Field
-                  name="email"
-                  className="form-field"
-                  placeholder="E-mail"
-                />
-                <ErrorMessage
-                  component="span"
-                  name="email"
-                  className="form-error"
-                />
-              </div>
-              <div className="input-field">
-                <Field name="cpf" className="form-field" placeholder="CPF" />
-                <ErrorMessage
-                  component="span"
-                  name="cpf"
-                  className="form-error"
-                />
-              </div>
-              <div className="input-field">
-                <Field
-                  name="data_nascimento"
-                  className="form-field"
-                  placeholder="Data de nascimento"
-                  type="date"
-                />
-                <ErrorMessage
-                  component="span"
-                  name="data_nascimento"
-                  className="form-error"
-                />
-              </div>
-              <div className="input-field">
-                <Field
-                  name="password"
-                  className="form-field"
-                  placeholder="Digite sua senha."
-                  type="password"
-                />
-                <ErrorMessage
-                  component="span"
-                  name="password"
-                  className="form-error"
-                />
-              </div>
-              <button type="submit" className="button">
-                Enviar
-              </button>
-            </Form>
-          </Formik>
-        </div>
-        <div className={styles.svgLogo}>
-          <img src={Vetor} alt="" />
-        </div>
+            <Field
+              name="email"
+              className={styles.formField}
+              placeholder="E-mail"
+            />
+            <ErrorMessage
+              component="span"
+              name="email"
+              className="form-error"
+            />
+
+            <Field name="cpf" className={styles.formField} placeholder="CPF" />
+            <ErrorMessage component="span" name="cpf" className="form-error" />
+
+            <Field
+              name="data_nascimento"
+              className={styles.formField}
+              placeholder="Data de nascimento"
+              type="date"
+            />
+            <ErrorMessage
+              component="span"
+              name="data_nascimento"
+              className="form-error"
+            />
+
+            <Field
+              name="password"
+              className={styles.formField}
+              placeholder="Digite sua senha."
+              type="password"
+            />
+            <ErrorMessage
+              component="span"
+              name="password"
+              className="form-error"
+            />
+
+            <button type="submit" className="btn" style={{backgroundColor: "var(--beehive)", fontWeight: "700", fontSize: "2rem", borderRadius: "20px", boxShadow: "6px -6px 0px var(--buzz)"}}>
+              Cadastrar-se
+            </button>
+          </Form>
+        </Formik>
       </div>
+      <img src={Vetor} />
     </section>
   );
 };
