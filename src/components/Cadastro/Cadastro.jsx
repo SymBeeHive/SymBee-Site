@@ -43,7 +43,7 @@ const Cadastro = () => {
 
   const handleClickRegister = (values) => {
     axios
-      .post("http://localhost:3000/registro", {
+      .post("http://localhost:8080/api/v1/user/register", {
         first_name: values.first_name,
         last_name: values.last_name,
         email: values.email,

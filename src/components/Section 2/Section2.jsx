@@ -29,8 +29,8 @@ function Section2() {
             dotColor="transparent"
             bg="#F9D504"
             color="#1e1d1d"
-            fonte='30px'
-            scale='1.5'
+            fonte='20px'
+            scale='1.'
           />
         </div>
 
@@ -42,14 +42,16 @@ function Section2() {
             dotColor="#7100B2"
             bg="#7100B2"
             color="#1e1d1d"
+            fonte='13px'
           />
           <Num
-            nome="takeshi_SixNine"
+            nome="takeshi"
             colocacao="3"
             stroke="#3D1B11"
             dotColor="#3D1B11"
             bg="#3D1B11"
             color="#fff"
+            fonte='13px'
           />
           <Num
             nome="CactusJack"
@@ -57,6 +59,7 @@ function Section2() {
             stroke="#1E1D1D"
             color="#fff"
             bg="#1e1d1d"
+            fonte='13px'
           />
           <Num
             nome="MuuhPro"
@@ -64,6 +67,7 @@ function Section2() {
             stroke="#1E1D1D"
             color="#fff"
             bg="#1e1d1d"
+            fonte='13px'
           />
         </div>
       </div>
