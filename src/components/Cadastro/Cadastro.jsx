@@ -137,7 +137,7 @@ const Cadastro = () => {
             <Field
               name="password"
               className={styles.formField}
-              placeholder="Digite sua senha."
+              placeholder="Digite sua senha"
               type="password"
             />
             <ErrorMessage
