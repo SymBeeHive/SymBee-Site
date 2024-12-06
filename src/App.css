@@ -6,7 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+#root {
   background-image: url(img/white-square.png), linear-gradient(0deg, var(--stinger), #000);
   background-size: 3%;
 }

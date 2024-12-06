@@ -22,13 +22,12 @@ function Section4Rework() {
           <div className="beneficio-mutuo">
             <h3 className="bm-bm">Conexão</h3>
             <div className="girassol-abelha">
-              {" "}
-              <Abelha />{" "}
+              <Abelha />
             </div>
             <p>
-              Valorizamos criar relações que tenham impacto{" "}
-              <span className="bm-symbee">positivo</span> na vida profissional
-              e pessoal dos usuários.
+              Valorizamos criar relações que tenham impacto
+              <span className="bm-symbee"> positivo</span> na vida profissional e
+              pessoal dos usuários.
             </p>
           </div>
           <div className="beneficio-mutuo">
@@ -38,7 +37,8 @@ function Section4Rework() {
             </div>
 
             <p>
-              Incentivamos a disputa <span className="bm-symbee">saúdavel</span> entre nossos usuários por meio de nosso ranking e reputação.
+              Incentivamos a disputa <span className="bm-symbee">saúdavel</span>{" "}
+              entre nossos usuários por meio de nosso ranking e reputação.
             </p>
           </div>
         </div>

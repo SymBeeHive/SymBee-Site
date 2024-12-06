@@ -5,8 +5,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-image: url(img/section4bg.png);
+    height: 100%;
+    padding: 150px 50px;
+    background-color: var(--honey);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -16,16 +17,14 @@
         align-items: center;
         justify-content: center;
         width: 1400px;
-        
     
          & .cards-pq{
-        
             flex-direction: row;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             width: 100%;
             gap: 30px;
-          
         } 
     }
 }
@@ -38,11 +37,10 @@
 }
 
 .beneficio-mutuo{
-    
     height: 100%;
     width: 100%;
     background-color: #1E1D1D;
-    border-radius: 36px;
+    border-radius: 50px;
     color: #EAEAEA;
     text-align: center;
     font-size: 35px;
