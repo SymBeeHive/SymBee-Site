@@ -18,6 +18,10 @@ import DescricaoDeProjetos from "./components/Descrição dos Projetos/Descricao
 import Assinaturas from "./components/Assinaturas/Assinaturas";
 import Contato from "./components/Contato/Contato";
 import Error from "./components/404/Error";
+import Tags from "./components/Assinaturas/Tags/Tags";
+import ProjectFeed from "./components/Home/ProjectFeed";
+import OutletProjectFeed from "./OutletProjectFeed";
+
 
 createRoot(document.getElementById("root")).render(
   <Router>
@@ -31,6 +35,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/cargo" element={<Cargo />} />
         <Route path="/estudante" element={<CargoEstudante />} />
         <Route path="/bio" element={<Bio />} />
+        <Route path="/tags" element={<Tags/>} />
         <Route path="/end" element={<FimJornada />} />
         <Route path="/home" element={<ArmarioHome />} />
         <Route path="/perfil" element={<ArmarioPerfil />} />
@@ -39,6 +44,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/assinaturas" element={<Assinaturas />}/>
         <Route path="*" element={<Error />}/>
         <Route path="/contato" element={<Contato/>}/>
+        <Route path="/dev" element={<OutletProjectFeed/>}/>
       </Route>
     </Routes>
   </Router>

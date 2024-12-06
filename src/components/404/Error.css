@@ -1,0 +1,55 @@
+.container-error {
+    background-color: #eaeaea;
+    background-image: url(img\black-square.png), linear-gradient(0deg, var(--daisy), );
+    background-size: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center; 
+  
+    & .mensagem-desculpa {
+      margin-bottom: 20px;
+  
+      & h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+  
+      & h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+  
+      & p {
+        font-size: 1rem;
+  
+        & a {
+          color: blue;
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    & .beea {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; 
+  
+      & img {
+        width: 250px; 
+      }
+  
+      & p {
+        font-size: 1rem;
+  
+        & span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  

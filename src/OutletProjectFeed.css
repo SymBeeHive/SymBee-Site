@@ -1,0 +1,8 @@
+.LayoutHomePage{
+    max-width: 100%;
+    background-color: #EAEAEA;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+}
