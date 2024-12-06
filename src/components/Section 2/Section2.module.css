@@ -1,10 +1,11 @@
 .section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
-  height: 100vh;
+  justify-content: space-around;
+  height: 100%;
+  padding: 8rem 0;
+  margin: 0 65px;
+  gap: 6rem 0;
   /* margin: 0 10rem; */
 
   & .info {
@@ -16,6 +17,7 @@
     & .subTitle {
       color: var(--daisy);
     }
+
     & #description {
       color: var(--honey);
     }
@@ -41,30 +43,34 @@
     }
   }
 
-  & .users_ranking{
+  & .users_ranking {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 325px;
 
-    & .top{
-        position: relative;
-        width: fit-content;
-        background-color: var(--daisy);
-        box-shadow: 0 10px 14px rgba(0,0,0,0.2);
-        padding: 30px 80px ;
-        /* scale: 1.2; */
-        border-radius: 40px;
-        top: 3%;
-        right: 0;
+    & .top {
+      position: relative;
+      width: fit-content;
+      background-color: var(--daisy);
+      box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+      padding: 30px 80px;
+      scale: 0.8;
+      border-radius: 40px;
+      top: 5%;
+      right: 0;
     }
 
-    & .others{
-        max-width: fit-content;
-        background-color: var(--daisy);
-        padding: 30px;
-        border-radius: 0 0 40px 40px;
+    & .others {
+      width: 100%;
+      background-color: var(--daisy);
+      padding: 30px;
+      border-radius: 0 0 40px 40px;
     }
-
   }
+}
+
+@media(max-width: 905px){
+  
 }
