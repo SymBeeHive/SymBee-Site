@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Section2.module.css";
-import Num from "../Home/Ranking/Num";
+import Num from "../../Home/Ranking/Num";
 
 function Section2() {
   return (
@@ -30,7 +30,7 @@ function Section2() {
             bg="#F9D504"
             color="#1e1d1d"
             fonte='20px'
-            scale='1.'
+            scale='1.4'
           />
         </div>
 
@@ -41,7 +41,7 @@ function Section2() {
             stroke="#7100B2"
             dotColor="#7100B2"
             bg="#7100B2"
-            color="#1e1d1d"
+            color="#eaeaea"
             fonte='13px'
           />
           <Num

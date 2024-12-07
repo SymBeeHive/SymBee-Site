@@ -32,6 +32,8 @@
 .pergunta-symbee{
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
+    margin-bottom: 15px;
+    color: var(--stinger);
     font-weight: 700;
     text-align: center;
 }
@@ -62,7 +64,18 @@
     }
 }
 
-@media(max-width: 370px){
+@media(max-width: 400px){
+
+    .pergunta-symbee{
+        font-size: 40px;
+    }
+
     .beneficio-mutuo{
+        padding: 15px;
+        font-size: 18px;
+
+        & .bm-bm{
+            font-size: 23px;
+        }
     }
 }

@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
-import Secao from "./components/Section/Section";
-import Section2 from "./components/Section 2/Section2";
+import Secao from "./components/LandingPage/Section/Section";
+import Section2 from "./components/LandingPage/Section 2/Section2";
 import Footer from "./components/footer/Footer";
 import NavBarResponsiva from "./components/NavBarResponsiva/NavBarResponsiva";
 import Carrossel from "./components/LandingPage/Section 3 Rework/Section3";
