@@ -1,9 +1,9 @@
 import "./Footer.css";
 import React from "react";
 import SymBee from "./img/SymBee";
-import Ball from "./img/ball";
-import Instagram from "./img/instagram";
-import GitHub from "./img/github";
+import Ball from "./img/Ball";
+import Instagram from "./img/Instagram";
+import GitHub from "./img/Github";
 import Linkedin from "./img/Linkedin";
 
 const Footer = (props) => {
