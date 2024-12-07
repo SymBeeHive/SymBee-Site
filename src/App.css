@@ -22,18 +22,6 @@ p {
   max-width: 100%;
 }
 
-.footer,
-.section-four {
-  background-image: linear-gradient(
-    to right,
-    #1a074e,
-    #220a64,
-    #290e7a,
-    #311392,
-    #3917aa
-  );
-}
-
 body::-webkit-scrollbar {
   display: none;
 }

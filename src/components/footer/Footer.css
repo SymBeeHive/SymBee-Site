@@ -3,113 +3,62 @@
 /* Estilo global */
 
 .footer {
-  color: #fff;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
-  gap: 5px;
-  list-style: 1.5;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-}
-
-.FooterLogo {
-  width: 270px;
-  height: 100px;
-  display: flex;
-  align-items: center;
+  padding: 7rem;
   justify-content: center;
-  gap: 10px;
-  margin: 20px 20px;
-}
-
-
-
-.Point {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  height: 50%;
-  font-size: 30px;
-}
+  gap: 25px;
+  background-color: var(--daisy);
 
-.FooterSymbee h3 {
-  width: 115px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-weight: bold;  
-  margin-top: 3px;
-}
+  & .logo-nome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 
-.icons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 180px;
-  height: 60px;
-  padding: 5px;
-  background-color: #270a62;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
+    & h1 {
+      font-weight: 700;
+    }
+  }
 
-.iconsSocialNetworks {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-}
+  & .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: rgba(0,0,0,0.3);
+    padding: 12px 25px;
+    border-radius: 20px;
+  }
 
-.iconsSocialNetworks img {
-  width: 30px;
-  height: 30px;
-}
+  & .links {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
 
-.FooterContents,
-.footer h3 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 300px;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 20px;
-  font-weight: bold;
-}
+    & .topic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 100%;
+      gap: 5px;
+    }
+  }
 
-.FooterContents,
-a {
-  font-size: 13px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 300;
-  max-width: 100%;
-}
+  & .terms {
+    display: flex;
+    gap: 20px;
+  }
 
-.GeralLinks,
-.symbeeContentFooterLinks,
-.BusinessLinks,
-.DiretorioLinks {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 5px;
-}
+  a,
+  span {
+    color: var(--stinger);
+  }
 
-.business {
-  margin-bottom: 70px;
-}
-
-.Diretorio {
-  margin-top: 28px;
+  a{
+    text-decoration: underline;
+  }
 }
