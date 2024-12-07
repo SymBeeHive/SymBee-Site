@@ -3,7 +3,7 @@ import React from "react";
 import SymBee from "./img/SymBee";
 import Ball from "./img/Ball";
 import Instagram from "./img/Instagram";
-import GitHub from "./img/Github";
+import GitHub from "./img/GitHub";
 import Linkedin from "./img/Linkedin";
 
 const Footer = (props) => {
