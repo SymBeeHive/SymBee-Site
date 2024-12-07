@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import NavBarResponsiva from "./components/NavBarResponsiva/NavBarResponsiva";
 import Carrossel from "./components/LandingPage/Section 3 Rework/Section3";
 import Section4Rework from "./components/LandingPage/Section 4 Rework/Section4";
+import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
 
 
 function LandingPage() {
@@ -17,6 +18,7 @@ function LandingPage() {
       <Section2 />
       <Carrossel />
       <Section4Rework />
+      <CarrosselParcerias/>
       <Footer stroke="#eaeaea"/>
     </main>
   );

@@ -21,6 +21,8 @@ import Error from "./components/404/Error";
 import Tags from "./components/Assinaturas/Tags/Tags";
 import ProjectFeed from "./components/Home/ProjectFeed";
 import OutletProjectFeed from "./OutletProjectFeed";
+import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
+import Paralax from "./components/TesteParalax/Paralax";
 
 
 createRoot(document.getElementById("root")).render(
@@ -45,6 +47,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="*" element={<Error />}/>
         <Route path="/contato" element={<Contato/>}/>
         <Route path="/dev" element={<OutletProjectFeed/>}/>
+        <Route path="/testeCarrosselParcerias" element={<CarrosselParcerias/>}/>
+        <Route path="/paralax" element={<Paralax/>}/>
       </Route>
     </Routes>
   </Router>
