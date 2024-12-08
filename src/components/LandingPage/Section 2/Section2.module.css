@@ -13,6 +13,7 @@
 
     .subTitle {
       color: var(--daisy);
+      text-align: center;
       animation: appear linear;
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
@@ -21,6 +22,7 @@
     #description {
       color: var(--honey);
       animation: appear linear;
+      text-align: center;
       animation-timeline: view();
       animation-range: entry 0% cover 40%;
     }
@@ -36,6 +38,7 @@
       .honey {
         color: var(--stinger);
         font-weight: 500;
+        text-align: center;
         font-size: 1.5rem;
         background-color: var(--honey);
         padding: 10px 20px;

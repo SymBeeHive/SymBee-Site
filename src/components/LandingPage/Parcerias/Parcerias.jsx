@@ -17,6 +17,7 @@ function CarrosselParcerias() {
     tevejo,
     devance,
     tevejo,
+    devance
   ];
 
   // Duplique a lista para criar um efeito de looping

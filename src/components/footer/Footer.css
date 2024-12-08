@@ -55,6 +55,7 @@
 
   a,
   span {
+    text-align: center;
     color: var(--stinger);
   }
 

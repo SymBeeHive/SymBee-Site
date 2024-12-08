@@ -24,8 +24,6 @@ import OutletProjectFeed from "./OutletProjectFeed";
 import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
 import Paralax from "./components/TesteParalax/Paralax";
 import ParallaxText from "./components/ParallaxText/ParallaxText";
-import Comercial from "./components/Comercial/Comercial";
-
 
 createRoot(document.getElementById("root")).render(
   <Router>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./ParallaxText.css";
 
+
 const ParallaxText = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
 

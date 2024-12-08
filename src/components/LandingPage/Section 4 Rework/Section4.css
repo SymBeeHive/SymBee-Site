@@ -2,10 +2,11 @@
 
 .section4 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 150px 50px;
+  padding: 100px 0;
   background-color: var(--honey);
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,14 +16,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 1400px;
+    width: 100%;
 
     & .cards-pq {
-      flex-direction: row;
+      padding: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      width: 100%;
+      align-items: center;
       gap: 30px;
     }
   }

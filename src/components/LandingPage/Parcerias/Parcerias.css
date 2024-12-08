@@ -1,27 +1,11 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Animação da logo */
-
-@keyframes slide{
-  from{
-    transform: translateX(0);
-  }
-  to{
-    transform: translateX(-100%);
-  }
-}
-h3{
+h3 {
   color: white;
   font-weight: 600;
   font-size: 50px;
 }
 
 .logos::before,
-.logos::after{
+.logos::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,46 +13,58 @@ h3{
   height: 100%;
   content: "";
   z-index: 2;
-
 }
-
-.logos::before{
-  left: 0;
-  background: linear-gradient(to left, rgba(255,255,255,0), rgb(255, 255, 0));
-}
-
-.logos::after{
-  right: 0;
-  background: linear-gradient(to right, rgba(255,255,255,0),hsla(0, 0%, 99%, 0.075));
-}
-
 
 /* div logos e imagens */
-.logos{
+.logos {
   overflow: hidden;
   gap: 60px;
-  padding: 40px 0 40px 0   ;
-  background: #7100b2;
+  padding: 40px 0 40px 0;
+  background: transparent;
   position: relative;
   display: flex;
   justify-content: start;
   flex-direction: column;
   align-items: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+  
+  & .logos-slide {
+    display: flex;
+    white-space: nowrap;
+    animation: 120s slide infinite linear;
 
-    & .logos-slide{
-      display: flex;
-      white-space: nowrap;
-      animation: 120s slide infinite linear;
-
-      & img{
-        height: 150px;
-        width: 150px;
-        border-radius: 360px;
-        margin: 0 275px;
-      }
+    & img {
+      height: 150px;
+      width: 150px;
+      border-radius: 360px;
+      margin: 0 275px;
+      
     }
+  }
 }
 
-.logos:hover .logos-slide{
+.logos:hover .logos-slide {
   animation-play-state: paused;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }

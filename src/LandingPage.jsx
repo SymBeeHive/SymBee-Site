@@ -18,10 +18,9 @@ function LandingPage() {
       <NavBarResponsiva />
       <Secao />
       <Section2 />
-      <Carrossel />
-      <ParallaxText />
       <Section4Rework />
       <Comercial />
+      <Carrossel />
       <CarrosselParcerias/>
       <Footer stroke="#eaeaea"/>
     </main>
