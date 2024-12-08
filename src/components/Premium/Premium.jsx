@@ -6,7 +6,7 @@ import React from "react";
 const Premium = () => {
   const navegar = useNavigate();
   const handleBack = () => {
-    navegar("/tag");
+    navegar("/tags");
   };
   const handleEnd = () => {
     navegar("/end");

@@ -2,6 +2,8 @@ import Num from "./Num";
 import "./Ranking.css";
 import React from "react";
 
+
+
 const Ranking = () => {
   return (
     <section className="ranking">
@@ -9,7 +11,7 @@ const Ranking = () => {
         <h1 id="titleRanking">Ranking Mensal</h1>
         <div className="users-ranking">
           <Num
-            nome="Kay_bonjour"
+            nome="Aqui é você no futuro"
             colocacao="1"
             stroke="#EE9B11"
             dotColor="#F9D504"

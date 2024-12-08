@@ -1,10 +1,11 @@
 import React from 'react'
 import Abelha from './img/image6.png'
+import './Error.css'
 
 function Error() {
   return (
-    <div>
-        <div className="container">
+    <div className='error-page'>
+        <div className="container-error">
             <div className="mensagem-desculpa">
                 <h1>DESCULPE</h1>
                 <h2>Não conseguimos encontrar essa página</h2>

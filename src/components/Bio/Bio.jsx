@@ -7,7 +7,7 @@ const Bio = () => {
 
   const navegar = useNavigate();
   const handleTags = () => {
-    navegar("/tag");
+    navegar("/tags");
   };
   const handleBack = () => {
     navegar("/cargo");
