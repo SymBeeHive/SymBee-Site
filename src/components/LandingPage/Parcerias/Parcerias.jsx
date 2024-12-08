@@ -3,7 +3,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import tevejo from "./img/tevejo.jpg";
-import devance from "./img/devance.png";
+import devance from "./img/Devance.png";
 
 function CarrosselParcerias() {
   // Lista de imagens
