@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import Bee from "./assets/Bee";
-import { ProgressBar } from "react-bootstrap";
 
 function Home() {
   return (

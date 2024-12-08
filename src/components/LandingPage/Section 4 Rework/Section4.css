@@ -1,99 +1,96 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 150px 50px;
+  background-color: var(--honey);
+  background-size: cover;
+  background-repeat: no-repeat;
 
-.section4{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding: 150px 50px;
-    background-color: var(--honey);
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    & .layout{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 1400px;
-    
-         & .cards-pq{
-            flex-direction: row;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            width: 100%;
-            gap: 30px;
-        } 
-    }
-}
-
-.pergunta-symbee{
-    font-family: 'Poppins', sans-serif;
-    font-size: 64px;
-    margin-bottom: 15px;
-    color: var(--stinger);
-    font-weight: 700;
-    text-align: center;
-    animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
-.beneficio-mutuo{
-    height: 100%;
-    width: 100%;
-    background-color: #1E1D1D;
-    border-radius: 50px;
-    color: #EAEAEA;
-    text-align: center;
-    font-size: 35px;
-    padding: 30px;
+  & .layout {
     display: flex;
     flex-direction: column;
     align-items: center;
-    animation: appear linear;
+    justify-content: center;
+    width: 1400px;
+
+    & .cards-pq {
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      gap: 30px;
+    }
+  }
+}
+
+.pergunta-symbee {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  margin-bottom: 15px;
+  color: var(--stinger);
+  font-weight: 700;
+  text-align: center;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.beneficio-mutuo {
+  height: 100%;
+  width: 100%;
+  background-color: #1e1d1d;
+  border-radius: 50px;
+  color: #eaeaea;
+  text-align: center;
+  font-size: 35px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: appear linear;
   animation-timeline: view();
   animation-range: entry 0% cover 40%;
 
-    & .bm-bm{
-        color: #FABC3F;
-        font-size: 35px;
-    }
-    & .bm-symbee{
-        color: #FABC3F;
-    }
+  & .bm-bm {
+    color: #fabc3f;
+    font-size: 35px;
+  }
+  & .bm-symbee {
+    color: #fabc3f;
+  }
 
-    & .girassol-abelha{
-        display: flex;
-    }
+  & .girassol-abelha {
+    display: flex;
+  }
 }
 
-@media(max-width: 400px){
+@media (max-width: 400px) {
+  .pergunta-symbee {
+    font-size: 40px;
+  }
 
-    .pergunta-symbee{
-        font-size: 40px;
-    }
+  .beneficio-mutuo {
+    padding: 15px;
+    font-size: 18px;
 
-    .beneficio-mutuo{
-        padding: 15px;
-        font-size: 18px;
-
-        & .bm-bm{
-            font-size: 23px;
-        }
-    }
-}
-
-
-@keyframes appear {
-    from {
-      opacity: 0;
-      scale: 0.5;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
+    & .bm-bm {
+      font-size: 23px;
     }
   }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}

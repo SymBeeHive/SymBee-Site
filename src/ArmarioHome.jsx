@@ -11,7 +11,6 @@ const ArmarioHome = () => {
         <Home />
         <Feed />
         <Ranking />
-        
       </div>
     </>
   );
