@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "./Section2.module.css";
-import Num from "../Home/Ranking/Num";
+import Num from "../../Home/Ranking/Num";
 
 function Section2() {
 
   
   return (
+    
     <section className={styles.section}>
       <div className={styles.info}>
         <h1 className={styles.subTitle}>Alcance o topo!</h1>
@@ -31,8 +32,8 @@ function Section2() {
             dotColor="transparent"
             bg="#F9D504"
             color="#1e1d1d"
-            fonte='30px'
-            scale='1.5'
+            fonte='20px'
+            scale='1.4'
           />
         </div>
 
@@ -43,15 +44,17 @@ function Section2() {
             stroke="#7100B2"
             dotColor="#7100B2"
             bg="#7100B2"
-            color="#1e1d1d"
+            color="#eaeaea"
+            fonte='13px'
           />
           <Num
-            nome="takeshi_SixNine"
+            nome="takeshi"
             colocacao="3"
             stroke="#3D1B11"
             dotColor="#3D1B11"
             bg="#3D1B11"
             color="#fff"
+            fonte='13px'
           />
           <Num
             nome="CactusJack"
@@ -59,6 +62,7 @@ function Section2() {
             stroke="#1E1D1D"
             color="#fff"
             bg="#1e1d1d"
+            fonte='13px'
           />
           <Num
             nome="MuuhPro"
@@ -66,6 +70,7 @@ function Section2() {
             stroke="#1E1D1D"
             color="#fff"
             bg="#1e1d1d"
+            fonte='13px'
           />
         </div>
       </div>

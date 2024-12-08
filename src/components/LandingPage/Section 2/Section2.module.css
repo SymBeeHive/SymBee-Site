@@ -1,0 +1,139 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 35px;
+  margin: 5%;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .subTitle {
+      color: var(--daisy);
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    #description {
+      color: var(--honey);
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+
+    .beehive {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 1.6rem;
+
+      .honey {
+        color: var(--stinger);
+        font-weight: 500;
+        font-size: 1.5rem;
+        background-color: var(--honey);
+        padding: 10px 20px;
+        border-radius: 50px;
+        box-shadow: -5px 5px var(--beehive),
+          inset -6px 4px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease, background-color 0.3s ease;
+        animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+
+        &:hover {
+          color: var(--stinger);
+          background-color: var(--daisy);
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+
+  .users_ranking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+
+    .top {
+      position: relative;
+      width: fit-content;
+      background-color: var(--daisy);
+      box-shadow: 0 10px 14px rgba(0, 0, 0, 0.2);
+      padding: 30px 80px;
+      scale: 0.8;
+      border-radius: 40px;
+      top: 3.5%;
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 50%;
+    }
+
+    .others {
+      width: 100%;
+      background-color: var(--daisy);
+      padding: 30px;
+      border-radius: 0 0 40px 40px;
+      animation: appear linear;
+      animation-timeline: view();
+      animation-range: entry 0% cover 40%;
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@media (max-width: 400px) {
+  .beehive {
+    .honey {
+      padding: 5px 10px;
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .users_ranking {
+    transform: scale(0.75);
+
+    .top {
+      padding: 30px 80px !important;
+    }
+  }
+}
+
+
+/* código para efeito scroll:
+
+no objeto:
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+no keyframes:
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.5;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+} */

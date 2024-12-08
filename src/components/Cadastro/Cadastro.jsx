@@ -43,7 +43,7 @@ const Cadastro = () => {
 
   const handleClickRegister = (values) => {
     axios
-      .post("http://localhost:3000/registro", {
+      .post("http://localhost:8080/api/v1/user/register", {
         first_name: values.first_name,
         last_name: values.last_name,
         email: values.email,
@@ -85,28 +85,26 @@ const Cadastro = () => {
           validationSchema={validationRegister}
         >
           <Form className={styles.registerForm}>
-            
-              <Field
-                name="first_name"
-                className={styles.formField}
-                placeholder="Primeiro nome"
-              />
-              <ErrorMessage
-                component="span"
-                name="first_name"
-                className="form-error"
-              />
-              <Field
-                name="last_name"
-                className={styles.formField}
-                placeholder="Último nome"
-              />
-              <ErrorMessage
-                component="span"
-                name="last_name"
-                className="form-error"
-              />
-            
+            <Field
+              name="first_name"
+              className={styles.formField}
+              placeholder="Primeiro nome"
+            />
+            <ErrorMessage
+              component="span"
+              name="first_name"
+              className="form-error"
+            />
+            <Field
+              name="last_name"
+              className={styles.formField}
+              placeholder="Último nome"
+            />
+            <ErrorMessage
+              component="span"
+              name="last_name"
+              className="form-error"
+            />
 
             <Field
               name="email"
@@ -146,13 +144,26 @@ const Cadastro = () => {
               className="form-error"
             />
 
-            <button type="submit" className="btn" style={{backgroundColor: "var(--beehive)", fontWeight: "700", fontSize: "2rem", borderRadius: "20px", boxShadow: "6px -6px 0px var(--buzz)"}}>
+            <button
+              type="submit"
+              className="btn"
+              style={{
+                backgroundColor: "var(--honey)",
+                fontWeight: "700",
+                fontSize: "2rem",
+                borderRadius: "20px",
+                boxShadow: "6px -6px 0px var(--beehive)",
+                color: "var(--stinger)",
+              }}
+            >
               Cadastrar-se
             </button>
           </Form>
         </Formik>
       </div>
-      <img src={Vetor} />
+      <div className="right-logo">
+        <img src={Vetor} />
+      </div>
     </section>
   );
 };

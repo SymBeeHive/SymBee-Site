@@ -1,0 +1,20 @@
+    .scroll-container {
+    position: relative;
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    background-color: #ee9911;
+
+    & .scroll-text {
+        font-size: 12rem;
+        transition: transform 0.1s ease-out; /* Para suavizar o movimento */
+        font-weight: 600;
+        color: #fcf5e963;
+        position: absolute;
+        left: -100%;
+        transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+      }
+  }
+  
+  
+  

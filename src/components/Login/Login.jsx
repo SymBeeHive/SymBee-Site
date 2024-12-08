@@ -22,17 +22,17 @@ const Login = () => {
 
   const handleClickLogin = (values) => {
     axios
-      .post("http://localhost:3000/login", {
+      .post("http://localhost:8080/api/v1/user/login", {
         email: values.email,
         password: values.password,
       })
       .then((response) => {
         console.log(response);
 
-        if (response.data.msg == "Logado com sucesso!") {
+        if (response.status == 200) {
           navegar("/profile-choice");
         } else {
-          alert(response.data.msg); // Mensagem do servidor, como "Usuário já está cadastrado."
+          alert(response.data); // Mensagem do servidor, como "Usuário já está cadastrado."
         }
       });
   };

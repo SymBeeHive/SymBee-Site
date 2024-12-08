@@ -32,8 +32,13 @@
 .pergunta-symbee{
     font-family: 'Poppins', sans-serif;
     font-size: 64px;
+    margin-bottom: 15px;
+    color: var(--stinger);
     font-weight: 700;
     text-align: center;
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 .beneficio-mutuo{
@@ -48,6 +53,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 
     & .bm-bm{
         color: #FABC3F;
@@ -62,3 +70,30 @@
     }
 }
 
+@media(max-width: 400px){
+
+    .pergunta-symbee{
+        font-size: 40px;
+    }
+
+    .beneficio-mutuo{
+        padding: 15px;
+        font-size: 18px;
+
+        & .bm-bm{
+            font-size: 23px;
+        }
+    }
+}
+
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
