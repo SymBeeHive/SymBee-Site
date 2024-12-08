@@ -1,0 +1,19 @@
+    .scroll-container {
+    position: relative;
+    height: 23vh;
+    display: flex;
+    align-items: center;
+    background-color: #ee9911;
+
+    & .scroll-text {
+        font-size: 12rem;
+        transition: transform 0.4s cubic-bezier(0,.64,.33,1.27); /* Para suavizar o movimento */
+        font-weight: 600;
+        color: #fcf5e963;
+        position: absolute;
+        left: -100%;
+      }
+  }
+  
+  
+  

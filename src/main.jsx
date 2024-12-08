@@ -23,6 +23,8 @@ import ProjectFeed from "./components/Home/ProjectFeed";
 import OutletProjectFeed from "./OutletProjectFeed";
 import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
 import Paralax from "./components/TesteParalax/Paralax";
+import ParallaxText from "./components/ParallaxText/ParallaxText";
+import Comercial from "./components/Comercial/Comercial";
 
 
 createRoot(document.getElementById("root")).render(
@@ -49,6 +51,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/dev" element={<OutletProjectFeed/>}/>
         <Route path="/testeCarrosselParcerias" element={<CarrosselParcerias/>}/>
         <Route path="/paralax" element={<Paralax/>}/>
+        <Route path="/ParallaxText" element={<ParallaxText/>}/>
       </Route>
     </Routes>
   </Router>

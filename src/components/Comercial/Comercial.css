@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding: 100px 0;
+  gap: 6rem;
+
+  & .video-container{
+    height: 540px;
+    width: 960px;
+
+    & iframe{
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

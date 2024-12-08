@@ -21,7 +21,9 @@
       background-image: linear-gradient(
         180deg,
         rgba(234, 234, 234, 1) 0%,
-        rgba(249, 213, 4, 1) 100%
+        rgba(249, 213, 4, 1) 100%,
+        rgb(202, 151, 10) 100%,
+        rgb(218, 218, 218) 100%
       );
       background-size: 100%;
       background-repeat: repeat;
@@ -29,6 +31,8 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       -moz-background-clip: text;
+      background-size: 400% 400%;
+      animation: gradient 7s ease  infinite;
     }
 
     & span {
@@ -81,6 +85,24 @@
       }
     }
   }
+}
+
+@keyframes gradient {
+    0%{
+      background-position: 0 0;
+    }
+    75%{
+      background-position: 100% 0;
+    }
+    100%{
+      background-position: 100% 100%;
+    }
+    75%{
+      background-position: 0 100%;
+    }
+    100%{
+      background-position: 0 0;
+    }
 }
 
 @media (max-width: 532px) {
