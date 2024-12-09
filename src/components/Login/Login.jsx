@@ -79,10 +79,20 @@ const Login = () => {
                   name="password"
                   className="form-error"
                 />
-              </div>
-              <button className="button" type="submit">
+              
+              <button className="button" type="submit"
+              style={{
+                width: "20vh",
+                backgroundColor: "var(--honey)",
+                fontWeight: "700",
+                fontSize: "2rem",
+                borderRadius: "20px",
+                boxShadow: "6px -6px 0px var(--beehive)",
+                color: "var(--stinger)",
+              }}>
                 Entrar
               </button>
+              </div>
             </Form>
           </Formik>
         </div>
