@@ -15,13 +15,13 @@ const ProjectFeed = () => {
   const projetos = [
     {
       id: 1,
-      foto: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSRMumG71OhgkIirdNYpGh77y8DIWUzITNaBwFHQ5iLNkTP2pSF6seFF4OoWjTl4LFpbOplAVAe8FLQCDdOj_eB8VSiDfpuJl1UiBIKgi2h",
+      foto: "nulo",
       conteudo: "Robrocha",
       descricao: "maldição na terra",
     },
     {
       id: 2,
-      foto: "https://play-lh.googleusercontent.com/2lTR_1TZ2SFI85eGuUNcsjZwOxvmFysENztKY4Yaivgvd2d5cF_N17Y-XRSk4uQNErk",
+      foto: "nulo",
       conteudo: "Konoia",
       descricao: "jogo foda",
     },
