@@ -4,7 +4,7 @@
   background-color: transparent;
   padding: 5vh;
 
-  & h1 {
+  h1 {
     text-align: center;
     font-size: 3rem;
     margin: 3vh;
@@ -12,33 +12,127 @@
     color: black;
   }
 
-  & .plansContainer {
+  .plansContainer {
     display: flex;
     flex-direction: row;
     margin: 10vh;
     justify-content: center;
     gap: 10vh;
 
-    & .planWorker {
-      width: 90vh;
+    .planWorker {
+      position: relative;
+      width: 60vh;
       height: 50vh;
-      background-size: 7%;
-      background-image: url("./img/Quadradopt2.png");
+      padding: 20px;
       background-color: #1e1d1d;
       border-radius: 30px;
       box-shadow: 5px 5px 10px gray;
-      
-    }
-
-    & .planQueen {
+      text-align: center;
+      color: white;
       background-size: 10%;
       background-image: url("./img/Quadradopt2.png");
+      display: flex;
+      flex-direction: column;
+
+
+
+
+      & li {
+        list-style: none;
+        padding: 0;
+        font-size: 1rem;
+        color: #D4B865;
+        text-align: left;
+        line-height: 2;
+
+      }
+    }
+
+    .planWorker h2 {
+      font-size: 2.5rem;
+      color: #D4B865;
+    }
+
+    .planQueen {
+      position: relative;
+      width: 50vh;
+      height: 65vh;
+      padding: 20px;
       background-color: #1e1d1d;
       border-radius: 30px;
-      width: 60vh;
-      height: 80vh;
       box-shadow: 5px 5px 10px gray;
+      text-align: center;
+      color: white;
+      background-size: 10%;
+      background-image: url("./img/Quadradopt2.png");
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #FB9205;
+    }
+
+    hr {
+      margin: 10px 0;
+      border: none;
+      height: 2px;
+      background-color: #f3c623;
+    }
+
+    .iconBee {
+      width: 50px;
+      height: 50px;
+      margin: 10px auto;
+      background-image: url("./img/bee.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #fff;
       
+
+
+      & strong {
+        font-size: 2rem;
+        color: #F9D504;
+      }
+    }
+
+
+
+    .features {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      color: #FB9205;
+      text-align: left;
+      margin: 20px auto;
+      line-height: 2;
+    }
+
+    .currentLevel {
+      font-size: 1.2rem;
+      color: gray;
+    }
+
+    .upgradeButton {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #2800B1;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .upgradeButton:hover {
+      background-color: #18035e;
     }
   }
 }

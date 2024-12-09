@@ -1,22 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
-#root {
-  background: radial-gradient(
-    circle,
-    #e7ddb8,
-    #dcd2af,
-    #d1c7a7,
-    #c7bd9e,
-    #bcb296
-  );
-}
+
 
 .RegisterPage {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100vh;
-  margin: 0 10rem;
+  padding: 0 10rem;
+  background-image: radial-gradient(circle,
+      #e7ddb8,
+      #dcd2af,
+      #d1c7a7,
+      #c7bd9e,
+      #bcb296);
+
+
+      & img{
+        position: relative;
+        right: 25vh;
+        }
 
   & .layout {
     display: flex;
@@ -24,6 +27,9 @@
     justify-content: space-between;
     width: 600px;
     margin-right: 8rem;
+
+
+    
   }
 }
 
@@ -35,7 +41,8 @@
 
   & span {
     margin-left: 10px;
-    color: var(--daisy);
+    color:#7e0000;
+
   }
 
   & .formField {
@@ -66,7 +73,7 @@
     width: 100%;
   }
 
-  .right-logo{
+  .right-logo {
     display: none;
   }
 }
