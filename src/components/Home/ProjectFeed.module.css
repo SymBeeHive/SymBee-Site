@@ -1,0 +1,29 @@
+.projectFeed {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  gap: 3rem;
+  height: 100%;
+  margin: 10px 0;
+  background: red;
+
+  & .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: blue;
+
+    & h3 {
+      color: var(--stinger);
+      font-weight: 700;
+      font-size: 25px;
+    }
+
+    & span {
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+}
