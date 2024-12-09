@@ -1,66 +1,41 @@
 .plansSection {
-  width: 95%;
-  margin: auto;
-  background-color: transparent;
-  padding: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 45px 0;
 
-  h1 {
+  & h1 {
     text-align: center;
-    font-size: 3rem;
-    margin: 3vh;
+    width: 65rem;
+    max-width: 100%;
     font-weight: 600;
+    font-size: 50px;
     color: black;
+    padding: 0 55px;
   }
 
-  .plansContainer {
+  & .plansContainer {
     display: flex;
-    flex-direction: row;
-    margin: 10vh;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 10vh;
+    gap: 3.3rem;
+    align-items: flex-start;
+    width: 100%;
 
-    .planWorker {
-      position: relative;
-      width: 60vh;
-      height: 50vh;
-      padding: 20px;
-      background-color: #1e1d1d;
-      border-radius: 30px;
-      box-shadow: 5px 5px 10px gray;
-      text-align: center;
-      color: white;
-      background-size: 10%;
-      background-image: url("./img/Quadradopt2.png");
-      display: flex;
-      flex-direction: column;
-
-
-
-
-      & li {
-        list-style: none;
-        padding: 0;
-        font-size: 1rem;
-        color: #D4B865;
-        text-align: left;
-        line-height: 2;
-
-      }
-    }
-
-    .planWorker h2 {
+    & .planWorker h2 {
       font-size: 2.5rem;
-      color: #D4B865;
+      color: #d4b865;
     }
 
-    .planQueen {
+    & .plan {
       position: relative;
-      width: 50vh;
-      height: 65vh;
-      padding: 20px;
+      width: min-content;
+      height: min-content;
+      padding: 2rem 5rem;
       background-color: #1e1d1d;
       border-radius: 30px;
-      box-shadow: 5px 5px 10px gray;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
       text-align: center;
       color: white;
       background-size: 10%;
@@ -69,19 +44,28 @@
       flex-direction: column;
     }
 
-    h2 {
-      font-size: 2.5rem;
-      color: #FB9205;
-    }
-
-    hr {
-      margin: 10px 0;
-      border: none;
-      height: 2px;
+    & hr {
       background-color: #f3c623;
     }
 
-    .iconBee {
+    & li {
+      list-style: none;
+      padding: 0;
+      font-size: 1rem;
+      text-align: left;
+      line-height: 2;
+    }
+
+    & h2 {
+      font-size: 2.5rem;
+      color: #fb9205;
+    }
+
+    & .premium {
+      background-color: #fb9205;
+    }
+
+    & .iconBee {
       width: 50px;
       height: 50px;
       margin: 10px auto;
@@ -90,49 +74,59 @@
       background-repeat: no-repeat;
     }
 
-    .price {
+    & .price {
       font-size: 2rem;
       color: #fff;
-      
-
 
       & strong {
         font-size: 2rem;
-        color: #F9D504;
+        color: #f9d504;
       }
     }
 
-
-
-    .features {
+    & .features {
       list-style: none;
       padding: 0;
       font-size: 1rem;
-      color: #FB9205;
+      color: #fb9205;
       text-align: left;
       margin: 20px auto;
       line-height: 2;
     }
 
-    .currentLevel {
+    & .currentLevel {
       font-size: 1.2rem;
       color: gray;
     }
 
-    .upgradeButton {
+    & .upgradeButton {
       margin-top: 20px;
       padding: 10px 20px;
       font-size: 1rem;
       color: white;
-      background-color: #2800B1;
+      background-color: #2800b1;
       border: none;
       border-radius: 20px;
       cursor: pointer;
       transition: 0.3s;
     }
 
-    .upgradeButton:hover {
+    & .upgradeButton:hover {
       background-color: #18035e;
     }
+  }
+}
+
+@media(max-width:400px){
+  .plansSection h1{
+    font-size: 25px;
+  }
+
+  .plansSection .plansContainer{
+    gap: 0;
+  }
+
+  .plansSection .plan{
+    transform: scale(0.85);
   }
 }

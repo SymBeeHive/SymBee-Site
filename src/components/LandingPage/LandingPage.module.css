@@ -1,0 +1,5 @@
+.daisySection{
+    background-color: var(--daisy);
+    background-image: url(img/black-square.png);
+    background-size: 2.5%;
+}

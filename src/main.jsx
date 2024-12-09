@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import LandingPage from "./LandingPage";
+import LandingPage from "./components/LandingPage/LandingPage";
 import Cadastro from "./components/Cadastro/Cadastro";
 import "./index.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -24,8 +24,6 @@ import OutletProjectFeed from "./OutletProjectFeed";
 import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
 import Paralax from "./components/TesteParalax/Paralax";
 import ParallaxText from "./components/ParallaxText/ParallaxText";
-import Comercial from "./components/Comercial/Comercial";
-import Grid from "./components/Grid/Grid";
 import Frelas from "./components/Frelas/Frelas";
 import Rank from "./components/Home/Ranking/Ranking2";
 
@@ -48,7 +46,6 @@ createRoot(document.getElementById("root")).render(
         <Route path="/perfil" element={<ArmarioPerfil />} />
         <Route path="/about-us" element={<SobreNos />}/>
         <Route path="/project-description" element={<DescricaoDeProjetos />}/>
-        <Route path="/assinaturas" element={<Assinaturas />}/>
         <Route path="*" element={<Error />}/>
         <Route path="/contato" element={<Contato/>}/>
         <Route path="/dev" element={<OutletProjectFeed/>}/>

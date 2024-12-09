@@ -11,6 +11,14 @@
   gap: 6rem;
   margin-bottom: 3rem;
 
+  & h3 {
+    color: var(--daisy);
+    font-size: 50px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
   & .video-container {
     width: 50%;
     height: 50%;

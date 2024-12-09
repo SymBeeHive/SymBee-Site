@@ -25,7 +25,7 @@ function CarrosselParcerias() {
 
   return (
     <section className="logos">
-      <h3>Quem Está Conosco</h3>
+      <h3>Quem está conosco?</h3>
       <div className="logos-slide">
         {imagensDuplicadas.map((src, index) => (
           <img key={index} src={src} alt={`Imagem ${index + 1}`} />
