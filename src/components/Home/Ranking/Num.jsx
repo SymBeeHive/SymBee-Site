@@ -3,6 +3,7 @@ import Bee from "../assets/Bee";
 import "./Num.css";
 
 function Num(props) {
+  
   return (
     <div className="numberRanking">
       <div className="colocacao" style={{background: props.bg, color: props.color, scale: props.scale}}>{props.colocacao}</div>

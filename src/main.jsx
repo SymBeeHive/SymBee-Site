@@ -25,6 +25,9 @@ import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
 import Paralax from "./components/TesteParalax/Paralax";
 import ParallaxText from "./components/ParallaxText/ParallaxText";
 import Comercial from "./components/Comercial/Comercial";
+import Grid from "./components/Grid/Grid";
+import Frelas from "./components/Frelas/Frelas";
+import Rank from "./components/Home/Ranking/Ranking2";
 
 
 createRoot(document.getElementById("root")).render(
@@ -52,6 +55,8 @@ createRoot(document.getElementById("root")).render(
         <Route path="/testeCarrosselParcerias" element={<CarrosselParcerias/>}/>
         <Route path="/paralax" element={<Paralax/>}/>
         <Route path="/ParallaxText" element={<ParallaxText/>}/>
+        <Route path="/Frelas" element={<Frelas/>}/>
+        <Route path="/Rank" element={<Rank/>}/>
       </Route>
     </Routes>
   </Router>

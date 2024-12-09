@@ -3,6 +3,8 @@
   align-items: center;
   width: 100%;
   gap: 2%;
+  cursor: grab;
+  user-select: none;
 
   & p,
   .colocacao {
@@ -19,13 +21,14 @@
     max-height: 1rem;
     border-radius: 100%;
     padding: 1.6rem;
-    box-shadow: 
-      inset 4px -4px 14px rgba(255, 255, 255, 0.5),
+    box-shadow: inset 4px -4px 14px rgba(255, 255, 255, 0.5),
       inset -2px 5px 14px rgba(0, 0, 0, 0.3);
     margin-bottom: 15px;
   }
-
   & #dot {
     transform: scale(0.25);
   }
+}
+.numberRanking:active {
+  cursor: grabbing;
 }
