@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Section2.module.css";
 import mel from "../img/lower-liquify-section2.svg";
 import Num from "../../Home/Ranking/Num";
+import Rank from "../../Home/Ranking/Ranking2";
 
 function Section2() {
   return (
@@ -23,55 +24,7 @@ function Section2() {
           </div>
         </div>
         <div className={styles.users_ranking}>
-          <div className={styles.top}>
-            <Num
-              nome="Kay_bonjour"
-              colocacao="1"
-              stroke="#EE9B11"
-              dotColor="transparent"
-              bg="#F9D504"
-              color="#1e1d1d"
-              fonte="20px"
-              scale="1.4"
-            />
-          </div>
-
-          <div className={styles.others}>
-            <Num
-              nome="KyanMaloca"
-              colocacao="2"
-              stroke="#7100B2"
-              dotColor="#7100B2"
-              bg="#7100B2"
-              color="#eaeaea"
-              fonte="13px"
-            />
-            <Num
-              nome="takeshi"
-              colocacao="3"
-              stroke="#3D1B11"
-              dotColor="#3D1B11"
-              bg="#3D1B11"
-              color="#fff"
-              fonte="13px"
-            />
-            <Num
-              nome="CactusJack"
-              colocacao="4"
-              stroke="#1E1D1D"
-              color="#fff"
-              bg="#1e1d1d"
-              fonte="13px"
-            />
-            <Num
-              nome="MuuhPro"
-              colocacao="5"
-              stroke="#1E1D1D"
-              color="#fff"
-              bg="#1e1d1d"
-              fonte="13px"
-            />
-          </div>
+          <Rank/>
         </div>
       </section>
       <img src={mel} style={{position: 'relative', zIndex: '1'}} />
