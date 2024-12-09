@@ -9,6 +9,7 @@ import Section4Rework from "./components/LandingPage/Section 4 Rework/Section4";
 import CarrosselParcerias from "./components/LandingPage/Parcerias/Parcerias";
 import ParallaxText from "./components/ParallaxText/ParallaxText";
 import Comercial from "./components/Comercial/Comercial";
+import Frelas from "./components/Frelas/Frelas";
 
 
 function LandingPage() {
@@ -17,8 +18,8 @@ function LandingPage() {
     <main id="landing-page">
       <NavBarResponsiva />
       <Secao />
+      <Frelas />
       <Section2 />
-      <Carrossel />
       <ParallaxText />
       <Section4Rework />
       <Comercial />

@@ -13,13 +13,11 @@ const ExpandableText = () => {
   return (
     <div className="expandable-container">
       <div className="frase" onClick={handleClick}>
-        Clique aqui para ver mais...
+      Encontre projetos sob medida
       </div>
       <div className={`texto-expandido ${isExpanded ? 'expandido' : ''}`}>
         <p>
-          Este é o texto expandido que aparece abaixo quando você clica na
-          frase. Aqui você pode adicionar qualquer conteúdo adicional que deseja
-          revelar.
+        Descubra trabalhos que se encaixam nas suas habilidades, desenvolva sua experiência profissional e receba por cada entrega concluída com sucesso.
         </p>
       </div>
     </div>
@@ -36,13 +34,11 @@ const ExpandableText2 = () => {
     return (
       <div className="expandable-container">
         <div className="frase" onClick={handleClick}>
-          Clique aqui para ver mais...
+        Trabalhe no seu próprio ritmo 
         </div>
         <div className={`texto-expandido ${isExpanded ? 'expandido' : ''}`}>
           <p>
-            Este é o texto expandido que aparece abaixo quando você clica na
-            frase. Aqui você pode adicionar qualquer conteúdo adicional que deseja
-            revelar.
+          Escolha os projetos que deseja realizar e trabalhe no seu próprio ritmo, sem horários fixos. Tenha total flexibilidade e liberdade para conciliar sua vida pessoal e profissional enquanto alcança seus objetivos.
           </p>
         </div>
       </div>
@@ -96,6 +92,9 @@ function Frelas() {
         <ExpandableText />
         <ExpandableText2 />
         <ExpandableText3 />
+      </div>
+      <div className="imagem">
+        <img src="https://i.imgur.com/b6UGE7H.jpeg"/>
       </div>
     </section>
   );
