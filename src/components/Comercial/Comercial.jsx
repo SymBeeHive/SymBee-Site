@@ -1,8 +1,10 @@
 import "./Comercial.css";
+import upperMel from "../LandingPage/img/liquify.svg";
 
 function Comercial() {
   return (
     <section className="container">
+      <img src={upperMel} />
       <h3>Assista nosso comercial!</h3>
       <div className="video-container">
         <iframe

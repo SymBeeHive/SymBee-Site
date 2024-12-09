@@ -1,6 +1,7 @@
 import React from "react";
 import Girassol from "./assets/Girassol";
 import Abelha from "./assets/Abelha";
+import mel from "../img/lower-liquify-section2.svg";
 import "./Section4.css";
 import upperMel from "../img/liquify.svg";
 import ParallaxText from "../../ParallaxText/ParallaxText";
@@ -8,7 +9,7 @@ import ParallaxText from "../../ParallaxText/ParallaxText";
 function Section4Rework() {
   return (
     <>
-      <img src={upperMel} style={{backgroundColor: 'var(--honey)'}} />
+      <img src={upperMel} style={{ backgroundColor: "var(--honey)" }} />
       <ParallaxText />
       <section className="section4">
         <div className="layout">
@@ -49,6 +50,7 @@ function Section4Rework() {
             </div>
           </div>
         </div>
+        <img src={mel} style={{ position: "relative", zIndex: "1" }} />
       </section>
     </>
   );

@@ -1,0 +1,17 @@
+.grid-background {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Ajusta os quadrados dinamicamente */
+    grid-template-rows: repeat(auto-fit, 50px); /* Define o tamanho das linhas */
+    gap: 10px; /* Espaçamento entre os elementos do grid */
+    background-color: #adadad; /* Cor de fundo geral */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    width: 100vw; /* Ocupa toda a largura da tela */
+  }
+  
+  .grid-background::before {
+    content: "";
+    display: block;
+    grid-column: 1 / -1;
+    height: 100vh; /* Preenche o container */
+  }
+  
