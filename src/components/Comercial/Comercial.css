@@ -1,37 +1,19 @@
-h3 {
-  padding: 20px;
-  text-align: center;
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 40%;
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 45.5%;
-  height: 0;
-  overflow: hidden;
-  width: 900px;
-  margin: 0 auto;
-  background: #000;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   height: 100%;
-  
-}
+  padding: 100px 0;
+  gap: 6rem;
 
-@keyframes appear {
-    from {
-      opacity: 0;
-      scale: 0.5;
-    }
-    to {
-      opacity: 1;
-      scale: 1;
+  & .video-container{
+    height: 540px;
+    width: 960px;
+
+    & iframe{
+      height: 100%;
+      width: 100%;
     }
   }
+}

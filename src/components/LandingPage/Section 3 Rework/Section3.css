@@ -1,36 +1,41 @@
 .section3-Swiper {
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 100vh;
   background-color: #ee9b11;
   width: 100vw;
-  
 
-  & .swiper-cards {
-    width: 400px;
-    height: 450px;
-    background-color: #1e1d1d;
-    border-radius: 23px;
+  & .swiper {
+    margin-top: 100px;
     display: flex;
-    color: aliceblue;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
-    
-    
+    height: 100%;
+    width: 100vw;
 
-    & .swiper-cards-title {
-      font-size: 40px;
-      font-weight: 600;
-      
-      & .swiper-cards-title-palavra {
+    & .swiper-cards {
+      width: 400px;
+      height: 450px;
+      background-color: #1e1d1d;
+      border-radius: 23px;
+      display: flex;
+      color: aliceblue;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      & .swiper-cards-title {
         font-size: 40px;
         font-weight: 600;
-        color: #ee9b11;
 
-        &.swiper-cards-titulo-paragraph {
-          font-size: 200px;
-          
+        & .swiper-cards-title-palavra {
+          font-size: 40px;
+          font-weight: 600;
+          color: #ee9b11;
+
+          &.swiper-cards-titulo-paragraph {
+            font-size: 200px;
+          }
         }
       }
     }
@@ -39,16 +44,13 @@
 
 .swiper-container {
   position: relative;
-  
 }
 
 .swiper-slide {
   transition: filter 1s ease;
-  
 }
 
 .swiper-slide:not(.swiper-slide-active) {
-  filter: blur(6px);
   opacity: 100;
 }
 
@@ -56,7 +58,6 @@
   filter: none;
   opacity: 1;
 }
-
 
 @keyframes appear {
   from {

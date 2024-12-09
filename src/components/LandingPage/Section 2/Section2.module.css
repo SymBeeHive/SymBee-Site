@@ -44,8 +44,8 @@
           inset -6px 4px 10px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s ease, background-color 0.3s ease;
         animation: appear linear;
-      animation-timeline: view();
-      animation-range: entry 0% cover 40%;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
 
         &:hover {
           color: var(--stinger);
@@ -57,13 +57,31 @@
   }
 
   .users_ranking {
-    background-color: var(--daisy);
-    padding: 45px;
-    border-radius: 40px;    
-    height: min-content;
-    & ul{
-      margin: 0;
-      padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+
+    .top {
+      position: relative;
+      width: fit-content;
+      background-color: var(--daisy);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+      padding: 30px 80px;
+      scale: 0.8;
+      border-radius: 40px;
+      top: 3.5%;
+    }
+
+    .others {
+      width: 100%;
+      background-color: var(--daisy);
+      padding: 30px;
+      border-radius: 0 0 40px 40px;
     }
   }
   
@@ -96,7 +114,6 @@
     }
   }
 }
-
 
 /* código para efeito scroll:
 
