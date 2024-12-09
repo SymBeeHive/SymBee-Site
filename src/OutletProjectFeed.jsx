@@ -8,12 +8,11 @@ import ProjectFeed from "./components/Home/ProjectFeed";
 const OutletProjectFeed = () => {
   return (
     <>
-      <div className="LayoutHomePage">
+      <main className="LayoutHomePage">
         <Home />
         <ProjectFeed/>
         <Ranking />
-        
-      </div>
+      </main>
     </>
   );
 };
