@@ -22,7 +22,7 @@ const ParallaxText = () => {
       <h1
         className="scroll-text"
         style={{
-          transform: `translateX(${scrollPosition * 1}px)`,
+          transform: `translateX(${scrollPosition * 0.75}px)`,
           opacity: 1 - Math.min(scrollPosition / 8000, 5),
         }}
       >

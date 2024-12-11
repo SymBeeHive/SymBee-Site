@@ -4,20 +4,41 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import tevejo from "./img/tevejo.jpg";
 import devance from "./img/Devance.png";
+import noolar from './img/noolar.png'
 
 function CarrosselParcerias() {
   // Lista de imagens
   const imagens = [
     tevejo,
     devance,
+    noolar,
     tevejo,
     devance,
+    noolar,
     tevejo,
     devance,
+    noolar,
     tevejo,
     devance,
+    noolar,
     tevejo,
-    devance
+    devance,
+    noolar,
+    tevejo,
+    devance,
+    noolar,
+    tevejo,
+    devance,
+    noolar,
+    tevejo,
+    devance,
+    noolar,
+    tevejo,
+    devance,
+    noolar,
+    tevejo,
+    devance,
+    noolar,
   ];
 
   // Duplique a lista para criar um efeito de looping

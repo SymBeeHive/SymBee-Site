@@ -18,13 +18,15 @@
   max-width: 100%;
 
   & .text-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 600;
     border-right: 5px solid;
-    overflow: hidden;
     color: var(--honey);
     padding-bottom: 5px;
     white-space: nowrap;
+    overflow: hidden;
+    width: min-content;
+    max-width: 100%;
     animation: typing 2s steps(23), cursor 0.4s step-end infinite alternate;
   }
 
@@ -58,7 +60,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 6px -6px 0px rgb(235, 183, 15);
-    width: 210px;
+    max-width: 210px;
     height: 100%;
     margin-bottom: 50px;
   }
@@ -66,6 +68,7 @@
 
 .expandable-container {
   width: fit-content;
+  max-width: 100%;
   margin-bottom: 10px;
   margin-right: 100%;
 }
@@ -127,6 +130,22 @@
   transition: opacity 0.6s;
 }
 
+@media (max-width: 876px) {
+  .box-text {
+    & .text-title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: 567px) {
+  .box-text {
+    & .text-title {
+      font-size: 2rem;
+    }
+  }
+}
+
 @media (max-width: 532px) {
   & .box-text {
     & .text-notebook {
@@ -140,9 +159,20 @@
   }
 }
 
+@media (max-width: 450px) {
+    & .box-text {
+      & .text-title {
+        font-size: 1.5rem;
+      }
+    }
+}
+
 @media (max-width: 400px) {
   .container-text {
     & .box-text {
+      & .text-title {
+        font-size: 1.3rem;
+      }
       & .text-notebook {
         & .text-paragraph {
           font-size: 15px;
@@ -151,6 +181,22 @@
           transform: scale(1.5);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 315px){
+  & .box-text {
+    & .text-title {
+      font-size: 1.35rem;
+    }
+  }
+}
+
+@media (max-width: 275px){
+  & .box-text {
+    & .text-title {
+      font-size: 1rem;
     }
   }
 }

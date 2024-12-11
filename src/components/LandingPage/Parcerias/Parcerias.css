@@ -31,7 +31,7 @@
   & .logos-slide {
     display: flex;
     white-space: nowrap;
-    animation: 120s slide infinite linear;
+    animation: 450s slide infinite linear;
 
     & img {
       height: 150px;
