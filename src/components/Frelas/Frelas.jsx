@@ -94,8 +94,23 @@ function Frelas() {
         <ExpandableText3 />
       </div>
       <div className="imagem">
-        <img src="https://i.imgur.com/b6UGE7H.jpeg"/>
-      </div>
+  <video
+    style={{ opacity: 1 }}
+    muted
+    data-video="optimize-features-2"
+    playsInline
+    poster="https://cdn.prod.website-files.com/66e88746834b80507cdf7933/66f5c1c1b22b1d1cdbb279d4_iterate.avif"
+    preload="none"
+    className="feature-tabs_video"
+  >
+    <source
+      data-src="https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/iterate-test-repeat.mp4"
+      type="video/mp4"
+      src="https://dhygzobemt712.cloudfront.net/Web/home/2024-wxp/features/iterate-test-repeat.mp4"
+    />
+  </video>
+</div>
+
     </section>
   );
 }
