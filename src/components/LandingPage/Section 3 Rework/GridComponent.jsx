@@ -1,4 +1,5 @@
 import React from "react";
+import davi from './img/davi.webp';
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiMapPin } from "react-icons/fi";
@@ -58,13 +59,13 @@ const Block = ({ className, ...rest }) => {
 const HeaderBlock = () => (
   <Block className="col-span-12 row-span-2 md:col-span-6">
     <img
-      src="https://cdn.discordapp.com/attachments/1282096832805081275/1315411844806086778/davi.webp?ex=6757503e&is=6755febe&hm=b26498a554588823a082daa0ebb003d4712898f65a116cbcdf565ecda425ecd1&"
+      src={davi}
       alt="avatar"
       className="mb-4 size-14 rounded-full"
     />
     <h1 className="mb-12 text-4xl font-medium leading-tight">
       Olá, eu sou o Davi.{" "}
-      <span className="text-zinc-400">Um dos fundadores da SymBee</span>
+      <span className="text-zinc-400">Product Owner da SymBee</span>
     </h1>
     <a
       href="https://www.linkedin.com/in/davi-in%C3%A1cio/"

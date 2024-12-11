@@ -15,9 +15,9 @@ const Logo = () => {
       <path
         d="M6 117.5L58.5 88L107 118.5V89L58.5 60.5L4 90V58.5L58.5 29L110 61.5"
         stroke="#EE9B11"
-        stroke-width="8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
       <path
         d="M21 132L46.5 146.909L56.7589 152.909L67.5 146.909L93 132"
@@ -82,7 +82,7 @@ const NavBarResponsiva = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="about-us" className="nav-link">
+                <a href="aboutUs" className="nav-link">
                   Sobre
                 </a>
               </li>

@@ -28,6 +28,7 @@
 
       & .informations {
         & .form-login {
+          height: 100%;
           width: max-content;
         }
       }

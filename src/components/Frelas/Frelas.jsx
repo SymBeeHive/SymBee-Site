@@ -51,28 +51,7 @@ const ExpandableText2 = () => {
   );
 };
 
-const ExpandableText3 = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
 
-  const handleClick = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  return (
-    <div className="expandable-container">
-      <div className="frase" onClick={handleClick}>
-        Clique aqui para ver mais...
-      </div>
-      <div className={`texto-expandido ${isExpanded ? "expandido" : ""}`}>
-        <p>
-          Este é o texto expandido que aparece abaixo quando você clica na
-          frase. Aqui você pode adicionar qualquer conteúdo adicional que deseja
-          revelar.
-        </p>
-      </div>
-    </div>
-  );
-};
 
 function Frelas() {
   const navigate = useNavigate();
@@ -101,7 +80,6 @@ function Frelas() {
         {/* Inserindo o ExpandableText dentro de Frelas */}
         <ExpandableText />
         <ExpandableText2 />
-        <ExpandableText3 />
       </div>
     </section>
   );
