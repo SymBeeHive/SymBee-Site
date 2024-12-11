@@ -67,38 +67,40 @@ const Login = () => {
                   className="form-error"
                 />
               </div>
-              <div className="input-login">
-                <Field
-                  name="password"
-                  type="password"
-                  className="login-field"
-                  placeholder="Senha"
-                />
-                <ErrorMessage
-                  component="span"
-                  name="password"
-                  className="form-error"
-                />
-              
-              <button className="button" type="submit"
-              style={{
-                width: "20vh",
-                backgroundColor: "var(--honey)",
-                fontWeight: "700",
-                fontSize: "2rem",
-                borderRadius: "20px",
-                boxShadow: "6px -6px 0px var(--beehive)",
-                color: "var(--stinger)",
-              }}>
+
+              <Field
+                name="password"
+                type="password"
+                className="login-field"
+                placeholder="Senha"
+              />
+              <ErrorMessage
+                component="span"
+                name="password"
+                className="form-error"
+              />
+
+              <button
+                className="button"
+                type="submit"
+                style={{
+                  width: "20vh",
+                  maxWidth: '100%',
+                  marginLeft: '15px',
+                  backgroundColor: "var(--honey)",
+                  fontWeight: "700",
+                  fontSize: "2rem",
+                  borderRadius: "20px",
+                  boxShadow: "6px -6px 0px var(--beehive)",
+                  color: "var(--stinger)",
+                }}
+              >
                 Entrar
               </button>
-              </div>
             </Form>
           </Formik>
         </div>
-        <div className="LogoSvg">
-          <img src={Vetor} alt="logo" />
-        </div>
+        <img src={Vetor} />
       </div>
     </section>
   );

@@ -42,18 +42,17 @@ function Secao() {
         <div className={styles.group}>
           <Anim
             sprite="./img/gifs/BeeIdle.webp"
-            titulo="Quer ganhar uns freelas?"
-            description="Não precisa trabalhar sozinho! você pode convidar outras pessoas para
-          colaborar nos projetos."
+            titulo="Está sem seu girassol?"
+            description="Não precisa trabalhar sozinho! você pode convidar outras pessoas para colaborar nos projetos."
           />
           <Anim
             sprite="./img/gifs/BeeHurt.webp"
-            titulo="Quem somos?"
+            titulo="Quem está na colmeia?"
             description="A SymBee nasceu para diminuir a dificuldade dos desenvolvedores em encontrarem um freelance."
           />
           <Anim
             sprite="./img/gifs/BeeDizzy.webp"
-            titulo="Está perdido?"
+            titulo="Não sabe onde está a colmeia?"
             description="Apenas aperte o botão acima e comece sua jornada na melhor plataforma de freelance dev!"
           />
         </div>
