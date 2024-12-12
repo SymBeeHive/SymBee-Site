@@ -1,5 +1,6 @@
 import styles from "./ProjectFeed.module.css";
 import React from "react";
+import Bee from "./assets/Bee.jsx";
 
 const Project = (props) => {
   return (
@@ -15,7 +16,7 @@ const ProjectFeed = () => {
   const projetos = [
     {
       id: 1,
-      foto: "nulo",
+      foto: "Bee",
       conteudo: "Robrocha",
       descricao: "maldição na terra",
     },
@@ -24,7 +25,15 @@ const ProjectFeed = () => {
       foto: "nulo",
       conteudo: "Konoia",
       descricao: "jogo foda",
+      
     },
+    {
+      id: 3,
+      foto: "nulo",
+      conteudo: "Konoia",
+      descricao: "jogo foda",
+    },
+    
   ];
 
   return (
