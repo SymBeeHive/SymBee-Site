@@ -8,7 +8,7 @@ import axios from "axios";
 
 const Cadastro = () => {
 
-  const url = "https://15ca-2804-14c-70-243e-340f-35e2-fb6a-789d.ngrok-free.app/";
+  const url = "https://15ca-2804-14c-70-243e-340f-35e2-fb6a-789d.ngrok-free.app";
   const navigate = useNavigate();
 
   const regraSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;

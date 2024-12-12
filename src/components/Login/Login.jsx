@@ -7,7 +7,7 @@ import * as yup from "yup";
 import axios from "axios";
 
 const Login = () => {
-  const url = "https://15ca-2804-14c-70-243e-340f-35e2-fb6a-789d.ngrok-free.app/";
+  const url = "https://15ca-2804-14c-70-243e-340f-35e2-fb6a-789d.ngrok-free.app";
   const navegar = useNavigate();
 
   const validationLogin = yup.object().shape({
