@@ -7,6 +7,8 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import axios from "axios";
 
 const Cadastro = () => {
+
+  const url = "https://15ca-2804-14c-70-243e-340f-35e2-fb6a-789d.ngrok-free.app/";
   const navigate = useNavigate();
 
   const regraSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
@@ -43,7 +45,7 @@ const Cadastro = () => {
 
   const handleClickRegister = (values) => {
     axios
-      .post("https://2ab6-2804-14c-70-243e-e864-cc7c-70cd-a546.ngrok-free.app/api/v1/user/register", {
+      .post(`${url}/api/v1/user/register`, {
         first_name: values.first_name,
         last_name: values.last_name,
         email: values.email,
