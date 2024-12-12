@@ -55,7 +55,7 @@ const Cadastro = () => {
       })
       .then((response) => {
         console.log(response);
-        if (response.data.msg == "Usuário cadastrado com sucesso.") {
+        if (response.status == 200) {
           navigate("/profile-choice");
         } else {
           alert(response.data); // Mensagem do servidor, como "Usuário já está cadastrado."
